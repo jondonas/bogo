@@ -1,0 +1,60 @@
+html *{
+    
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    
+    background-image: url("/media/dice.svg");
+    background-color: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: 30%
+    
+}
+
+#menu a {
+    
+    display: inline-block;
+    width: 100px;
+    height: ;
+    padding: 30px;
+    
+}
+
+li a {
+
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    
+    color: #00DDD8;
+}
+
+a:link, a:visited {
+    
+    color: Black;
+    
+}
+
+a:visited{
+    
+    color: black;
+    
+}
+
+a:visited:hover {
+    
+    color: #00DDD8;
+    
+}
+
+
