@@ -22,7 +22,7 @@ def bogosort(somelist):
         print a
         a += 1
     print datetime.datetime.now() - start
-    print "BOGONIGHT MOTHERFUCKER"
+    print "BOGONIGHT"
 
 random.shuffle(list1)
 bogosort(list1)
