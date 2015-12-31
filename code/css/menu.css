@@ -23,6 +23,11 @@ li {
     
 }
 
+#menu a:hover, a:visited:hover {
+    
+    color: #00DDD8;
+}
+
 .main {
 
     list-style-type: none;

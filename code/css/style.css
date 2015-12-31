@@ -4,11 +4,6 @@ html *{
     
 }
 
-#menu a:hover, a:visited:hover {
-    
-    color: #00DDD8;
-}
-
 a:link, a:visited {
     
     color: Black;
@@ -22,9 +17,11 @@ a:visited:hover {
     
 }
 
-#intro{
+.about {
     
-    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 46%;
     
 }
 
@@ -42,35 +39,3 @@ a:visited:hover {
     
 }
 
-#forms {
-    
-    margin:auto;
-    width: 60%;
-    border: 0px solid black;
-    padding 10px;
-    align-content: center;
-}
-
-#form {
-    
-    right:50%;
-    
-}
-
-.btn {
-    
-  color: #ffffff;
-  border-radius: 13px;
-  font-size: 12px;
-  background: #00DDD8;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-    
-}
-
-.btn:hover {
-    
-  background: #17ebe4;
-  text-decoration: none;
-    
-}

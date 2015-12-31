@@ -1,0 +1,32 @@
+.forms {
+    
+    margin:auto;
+    width: 60%;
+    border: 0px solid black;
+    padding 10px;
+    align-content: center;
+}
+
+.form {
+    
+    right:50%;
+    
+}
+
+.submit-btn {
+    
+  color: #ffffff;
+  border-radius: 13px;
+  font-size: 12px;
+  background: #00DDD8;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+    
+}
+
+.submit-btn:hover {
+    
+  background: #17ebe4;
+  text-decoration: none;
+    
+}
