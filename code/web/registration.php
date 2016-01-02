@@ -12,25 +12,25 @@
 
 <div id="menu">
     <ul class="main">
-    <li><a href="registration.html">Register</a> </li>
+    <li><a href="registration.php">Register</a> </li>
     <li><a href="home.html" id="head" title="Home">BOGO</a></li>
     <li><a href="about.html">About</a> </li>
     </ul>  
 </div>
     
     
-<form id="ajax-forms" method="post" action="mailer.php">
+<form id="forms" method="post" action="php/send.php">
     <div class="field">
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" required>
     </div>
     <div class="field">
         <label for="lastname">Last Name:</label>
-        <input type="text" id="firstname" name="firstname" required>
+        <input type="text" id="firstname" name="lastname" required>
     </div>
     <div class="field">
         <label for="email">Email:</label>
-        <input type="text" id="firstname" name="firstname" required>
+        <input type="text" id="firstname" name="email" required>
     </div>
     <div class="field">
         <button id="submit-btn" type="submit">Submit</button>
