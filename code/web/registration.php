@@ -1,25 +1,21 @@
-<!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/registration.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+<title>Registration Success!</title>
 </head>
 <html>
-<title>Register</title>
 <body>
 
 <div id="menu">
-    <ul class="main">
-    <li><a href="registration.php">Register</a> </li>
-    <li><a href="home.html" id="head" title="Home">BOGO</a></li>
-    <li><a href="about.html">About</a> </li>
-    </ul>  
-</div>
-    
-    
-<form id="forms" method="post" action="php/send.php">
+            <ul class="main">
+            <li><a href="registration.php" title="Register">Register</a> </li>
+            <li><a href="home.html" id="head" title="Home">BOGO</a></li>
+            <li><a href="about.html" title="About">About</a> </li>                
+            </ul>
+     </div>
+     <form id="forms" method="post" action="php/send.php">
     <div class="field">
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" required>
@@ -36,6 +32,8 @@
         <button id="submit-btn" type="submit">Submit</button>
     </div>
 </form>
-</div>
+
 </body>
 </html>
+
+
