@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-<title>Registration Success!</title>
+<title>Register</title>
 </head>
 <html>
 <body>

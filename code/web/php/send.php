@@ -6,7 +6,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 </head>
 <html>
-<title>Register</title>
+<title>Registration Success!</title>
 <body>
 <div id="menu">
 <ul class="main">
@@ -17,7 +17,7 @@
 </div>
 <?php
 $username = 'root';
-$password = 'db password';
+$password = 'db pass';
 $hostname = 'localhost';
 $dbname = 'bogo';
 
@@ -32,25 +32,37 @@ if ($con->connect_error) {
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
+$safefirstname = $con->real_escape_string($firstname);
+$safeLastName = $con->real_escape_string($lastname);
+$safeemail = $con->real_escape_string($email);
 
-$query = "INSERT INTO users (firstname, lastname, email)
-VALUES ('$firstname', '$lastname', '$email')";
-
-$con->close();
-
-//email person 
-$subject = "BOGO Registration";
-$messagetext = "Thank you for registering for BOGO. Check your email for party-time.";
-$headers = 'From: austin@bogo.gq';
-$val = mail($email, $subject, $messagetext, $headers);
-$confirmation = "Thanks for registering for BOGO! Check your email to make sure this was configured properly. Thanks! If you didn't get an email, check your spam folder.";
-
-if ($val == true) {
-    echo $confirmation;
-}else {
-    print_r(error_get_last());
+//validate fields
+$invalidName = (!preg_match("/^[a-zA-Z ]*$/", $firstname) || !preg_match("/^[a-zA-Z ]*$/", $lastname));
+$invalidEmail = !filter_var($email, FILTER_VALIDATE_EMAIL);
+if ($invalidName) {
+$nameErr = "Only letters and white space allowed in your name. \n"; 
 }
 
+if ($invalidEmail) {
+$emailErr = "Invalid email format.";
+}
+
+//email user 
+$subject = "BOGO Registration";
+$messagetext = "Thank you for registering for BOGO. Check your email for an update when the algorithm finishes.";
+$headers = 'From: austin@bogo.gq';
+$confirmation = "Thanks for registering for BOGO! Check your email to make sure this was configured properly. Thanks! If you didn't get an email, check your spam folder.";
+
+if ($invalidName) {
+    echo "Invalid name. ";
+} elseif ($invalidEmail) {
+    echo "Invalid email.";
+} else {
+    $con->query("INSERT INTO users (firstname, lastname, email) VALUES ('$safefirstname', '$safeLastName', '$safeemail')");
+    mail($email, $subject, $messagetext, $headers);
+    echo $confirmation;
+}
+$con->close();
 ?>
 
 </body>
