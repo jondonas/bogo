@@ -39,3 +39,14 @@ a:visited:hover {
     
 }
 
+hr {
+    
+    display: block;
+    margin-top: 0.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: outset;
+    border-width: 1px;
+    
+    
+}

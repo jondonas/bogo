@@ -12,7 +12,7 @@
 <div id="menu">
             <ul class="main">
             <li><a href="registration.php" title="Register">Register</a> </li>
-            <li><a href="home.html" id="head" title="Home">BOGO</a></li>
+            <li><a href="index.html" id="head" title="Home">BOGO</a></li>
             <li><a href="about.html" title="About">About</a> </li>                
             </ul>
      </div>
