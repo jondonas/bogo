@@ -17,7 +17,7 @@
 </div>
 <?php
 $username = 'root';
-$password = 'db pass';
+$password = 'paper';
 $hostname = 'localhost';
 $dbname = 'bogo';
 

@@ -1,6 +1,7 @@
 import random
 import datetime
 import time
+import mailer
 
 #basic bogosort example
 list1 = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -23,6 +24,7 @@ def bogosort(somelist):
         a += 1
     print datetime.datetime.now() - start
     print "BOGONIGHT"
+    mailer.mailAll() 
 
 random.shuffle(list1)
 bogosort(list1)
