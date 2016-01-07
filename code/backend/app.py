@@ -1,7 +1,7 @@
 import random
 import datetime
 import time
-import mailer
+from mailer import mailAll
 
 #basic bogosort example
 list1 = [1, 2, 3, 4, 5, 6, 7, 8]

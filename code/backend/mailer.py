@@ -1,14 +1,14 @@
 import MySQLdb
 import smtplib
 
-def mailAll()
+def mail():
 
     SERVER = "localhost"
 
     FROM = "austin@bogo.gq"
     TO = []
 
-    db = MySQLdb.connect(host = 'localhost', user = 'root', passwd='paper', db = 'bogo')
+    db = MySQLdb.connect(host='localhost', user='root', passwd='paper', db='bogo')
     cursor = db.cursor()
     cursor.execute('SELECT email FROM users WHERE email IS NOT NULL')
     db.commit()
@@ -25,8 +25,8 @@ def mailAll()
             Subject %s
 
     %s
-    """ %(FROM, ", ".join(TO), SUBJECT, TEXT)
+    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
 
     server = smtplib.SMTP(SERVER)
-    server.sendmail(FROM, TO, message)
+    server.sendmail(from, TO, message)
     server.quit()
