@@ -6,8 +6,13 @@ li {
 #menu {
     
     text-align: center;
-    opacity: 100
-     
+    opacity: 100; 
+    -webkit-animation: fadein 0s !important; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s !important; /* Firefox < 16 */
+    -ms-animation: fadein 1s !important; /* Internet Explorer */
+    -o-animation: fadein 1s !important; /* Opera < 12.1 */
+    animation: fadein 0s !important;
+
 }
 
 #menu a {
@@ -53,4 +58,4 @@ li {
     font-weight: 500;
     font-size: 40px;
     
-}
+

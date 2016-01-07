@@ -16,7 +16,9 @@
             <li><a href="about.html" title="About">About</a> </li>                
             </ul>
      </div>
-    
+
+<hr>
+
     <div class="forms">
      <form id="forms" method="post" action="php/send.php">
         <p>First Name:</p>
