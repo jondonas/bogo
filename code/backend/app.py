@@ -10,7 +10,7 @@ def mail():
     FROM = "austin@bogo.gq"
     TO = []
 
-    db = MySQLdb.connect(host='localhost', user='root', passwd='paper', db='bogo')
+    db = MySQLdb.connect(host='localhost', user='root', passwd='db pass', db='bogo')
     cursor = db.cursor()
     cursor.execute('SELECT email FROM users WHERE email IS NOT NULL')
     db.commit()
