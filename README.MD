@@ -13,9 +13,7 @@ We want to build a webapp that allows you to sign up for email/text notification
 
 - NGINX will be used as a reverse proxy and will serve static content
 
-- uWSGI will be used as an application container to manage requests
-
-- Supervisor will be used to start our python script and Flask framework on startup
+- Supervisor will be used to run our python script on startup
 
 - Python will be used for the Bogosort code
 
@@ -25,7 +23,7 @@ We want to build a webapp that allows you to sign up for email/text notification
 None yet.
 
 ##Project Status
-Under active development.
+Mostly completed unless I think of anything else to add.
 
 ##How to Contribute
 Pull requests welcome. Currently, this project is based in Waterloo and is being built in the spare time of the South 8 BogoBoyz ;)
