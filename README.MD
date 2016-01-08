@@ -1,6 +1,6 @@
 #Welcome to the Bogo Project!
 
-## View this project at [bogo.gq](bogo.gq)
+## View this project at [bogo.gq](http://wwww.bogo.gq)
 
 ##Background
 From Wikipedia: Bogosort is a particularly ineffective sorting algorithm based on the generate and test paradigm.
