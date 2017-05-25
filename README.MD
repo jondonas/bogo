@@ -1,14 +1,12 @@
-#Welcome to the Bogo Project!
+# Welcome to the Bogo Project!
 
-## View this project at [bogo.gq](http://www.bogo.gq)
-
-##Background
+## Background
 From Wikipedia: Bogosort is a particularly ineffective sorting algorithm based on the generate and test paradigm.
 
-##Purpose
-We want to build a webapp that allows you to sign up for email/text notifications for a BogoParty. Essentially, this server will be running the bogo algorithm (using python) and will send out an alert when the sorting algorithm completes. Sorting will be optimized to finish every 45 days or so.
+## Purpose
+We wanted to build a webapp that allowed you to sign up for email/text notifications for a BogoParty. Essentially, this server would run the bogo algorithm (using python) and send out an alert when the sorting algorithm completed. Sorting is optimized to finish every 45 days or so.
 
-##Components
+## Components
 - MySQL database to store emails, usernames, etc.
 
 - PHP used to handle forms.
@@ -21,13 +19,13 @@ We want to build a webapp that allows you to sign up for email/text notification
 
 > Components will be added as development occurs. The above are also currently suggestions and not set in stone. 
 
-##Installation
+## Installation
 None yet.
 
-##Project Status
-Mostly completed unless I think of anything else to add.
+## Project Status
+Mostly completed unless we think of anything else to add.
 
-##How to Contribute
+## How to Contribute
 Pull requests welcome. Currently, this project is based in Waterloo and is being built in the spare time of the South 8 BogoBoyz ;)
 
-######The end result of this project has little practicality, but is intended to be a fun way for anyone interested to improve their Python, Linux, and Web Development skills. The journey is the destination.
+###### The end result of this project has little practicality, but is intended to be a fun way for anyone interested to improve their Python, Linux, and Web Development skills. The journey is the destination.
